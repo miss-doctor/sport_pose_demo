@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Model checkpoints / outputs
+checkpoints/*.pth
+checkpoints/*.onnx
+exported/
+*.rknn
+work_dirs/
+results/
+
+# Data (用户自己的数据集通常不提交）
+data/sport/
+data/coco/
+!data/images/.gitkeep
+
+# Calibration / analysis artifacts
+deploy/calib/
+deploy/calib.txt
+analysis/
+*.quantization.cfg
+*.model
+*.data
+
+# Logs
+*.log
